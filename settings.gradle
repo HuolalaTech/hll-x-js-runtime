@@ -1,0 +1,6 @@
+rootProject.name = "XJSRuntime"
+include ':app'
+include ':v8'
+include ':jsc'
+include ':quickjs'
+include ':common'

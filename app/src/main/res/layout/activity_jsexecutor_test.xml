@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.paladin.engine.jsc.JSCExecutorTestActivity">
+
+
+        <Button
+            android:id="@+id/evaluateJavaScript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="evaluateJavaScript" />
+
+        <Button
+            android:id="@+id/callJavaScriptFunc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="callJavaScriptFunc" />
+
+
+        <Button
+            android:id="@+id/injectKVObject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="injectKVObject" />
+
+        <Button
+            android:id="@+id/testPaladinLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testPaladinLog"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/testNativeSetTimeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testNativeSetTimeout"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/testNativeBridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testNativeBridge"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/testNativeRequire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testNativeRequire"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/testSizeToFitList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testSizeToFitList" />
+
+        <Button
+            android:id="@+id/getPModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="getPModel" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnProtectJSObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="protectJSObj" />
+
+            <EditText
+                android:id="@+id/etProtectedObjName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUnprotectJSObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unprotectJSObj" />
+
+            <EditText
+                android:id="@+id/etUnprotectedObjName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCallFunc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="btnCallFunc" />
+
+            <EditText
+                android:id="@+id/etObjName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="40dp" />
+
+            <EditText
+                android:id="@+id/etFuncName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="40dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gc" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:rotation="45"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:background="@color/paladin_main_color"
+        android:textColor="@color/white"
+        android:text="JSC" />
+
+</RelativeLayout>

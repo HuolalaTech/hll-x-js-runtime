@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.paladin.engine">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".App"
+        android:theme="@style/Theme.JSRuntime">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- jsc -->
+        <activity
+            android:name=".jsc.JSCExecutorTestActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- qjs -->
+        <activity
+            android:name=".qjs.QJSExecutorTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qjs.QJSEvaluateVoidScriptActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qjs.QJSEvaluateStringScriptActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qjs.QJSCreateKVObjectTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qjs.QJSCallJavaScriptFuncTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qjs.QJSPaladinMethodTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- v8 -->
+        <activity
+            android:name=".v8.V8ExecutorTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v8.V8VoidScriptActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".v8.V8EvaluateStringScriptActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".v8.V8CreateKVObjectTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".v8.V8CallJavaScriptFuncTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".v8.V8PaladinMethodTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".debug.ExampleActivity" />
+    </application>
+
+</manifest>
